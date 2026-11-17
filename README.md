@@ -19,7 +19,7 @@ wrangler.jsonc       Cloudflare's settings for this project
 
 ## How it works
 
-1. You upload a piece at **/admin**. Sketch Studio cleans it (and removes notebook lines), you tidy it with
+1. You upload a piece at **/admin**. Lineworks cleans it (and removes notebook lines), you tidy it with
    the eraser, and it uploads a small **preview** (public, for the gallery) and the full **original** (private).
 2. A buyer opens a piece, sees its details, adds an optional extra, gives their name, email and a message,
    and pays on Paystack's secure page.
@@ -88,5 +88,5 @@ pretend Supabase and Paystack (admin login `admin@test.dev` / `testpass`).
 ## Changing things
 - **Goal, pieces, tags, descriptions, the Thank-yous wall**: all in /admin.
 - **Download backgrounds and mockups**: /admin → Backgrounds & mockups. Paper is laid under the whole drawing; for a mockup you drag a box over the spot the drawing goes. Clear is always offered.
-- **Line art or coloured**: when you add a drawing, Sketch Studio picks Line art or Coloured by itself; tap the other one to change it. Crop and Erase tidy anything left over.
+- **Line art or coloured**: when you add a drawing, Lineworks picks Line art or Coloured by itself; tap the other one to change it. Crop and Erase tidy anything left over.
 - **Text, plans, slideshow, social links**: `public/index.html`, the block marked `Edit these` near the top of the script.

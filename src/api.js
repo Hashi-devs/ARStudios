@@ -8,7 +8,7 @@ const CATS = ['arts', 'sketches', 'illustrations', 'stories', 'photos', 'games',
 // Games and tools aren't bought at a fixed price: people send their interest instead.
 const TALK = ['games', 'tools'];
 
-/* A preview path starting with / is a file on the site itself (used for Sketch Studio's card). */
+/* A preview path starting with / is a file on the site itself (used for Lineworks' card). */
 const previewUrl = (sb, path) => String(path || '').startsWith('/') ? path : sb.storage.publicUrl('previews', path);
 const cleanLink = v => { const u = String(v || '').trim().slice(0, 300); if (!u) return null; if (!/^https?:\/\/[^\s]+\.[^\s]+$/i.test(u)) throw err(400, 'The preview link should start with https://'); return u; };
 const KINDS = ['drawing', 'colour', 'photo'];

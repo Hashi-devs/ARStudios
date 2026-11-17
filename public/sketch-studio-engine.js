@@ -1,4 +1,4 @@
-/* Sketch Studio engine: no UI, no dependencies, runs in any modern browser.
+/* Lineworks engine: no UI, no dependencies, runs in any modern browser.
 
    import {digitise, mockup} from './sketch-studio-engine.js';
 

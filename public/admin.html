@@ -290,7 +290,7 @@ main{padding:22px 0 60px}
 <div class="toast glass" id="toast" role="status" aria-live="polite"></div>
 
 <script>
-/* Sketch Studio engine: no UI, no dependencies, runs in any modern browser.
+/* Lineworks engine: no UI, no dependencies, runs in any modern browser.
 
    import {digitise, mockup} from './sketch-studio-engine.js';
 
@@ -936,7 +936,7 @@ function renderTags(){const tags=allTags(),cur=cleanTag($('#pTag').value);
  $('#tagChips').replaceChildren(...tags.map(t=>{const b=document.createElement('button');b.type='button';b.textContent=t;b.setAttribute('aria-pressed',t===cur);b.onclick=()=>{$('#pTag').value=t;renderTags()};return b}))}
 $('#pTag').addEventListener('input',renderTags);
 
-/* add a piece: clean it with the Sketch Studio engine, tidy it with the eraser, then upload a small public preview and the full private original */
+/* add a piece: clean it with the Lineworks engine, tidy it with the eraser, then upload a small public preview and the full private original */
 const U={file:null,kind:'drawing',base:null,out:null,strokes:[],busy:false,tool:'move',v:{s:1,x:0,y:0},crop:null,org:{x:0,y:0}};
 const ART_K=k=>k==='drawing'||k==='colour';
 const HINTS={drawing:'Cleaned into line art on a clear background. Use Crop and Erase to remove anything that isn’t the drawing.',colour:'The paper is taken away and the colours are kept. Use Crop and Erase to tidy it.',photo:'Colour touched up. Buyers can frame it.',asis:'Uploaded exactly as it is, for digital art.'};

@@ -515,7 +515,7 @@ textarea.inp{min-height:110px;resize:vertical}
 </div></div>
 
 <script>
-/* Sketch Studio engine: no UI, no dependencies, runs in any modern browser.
+/* Lineworks engine: no UI, no dependencies, runs in any modern browser.
 
    import {digitise, mockup} from './sketch-studio-engine.js';
 
@@ -1081,7 +1081,7 @@ const TALK=['games','tools']; // these are by arrangement: people send their int
 let TAGS=[{k:'all',n:'Everything'},{k:'people',n:'People'},{k:'things',n:'Things'},{k:'anime',n:'Anime'},{k:'random',n:'Random'}];
 const PLANS=[                 // the 'What comes next' write-up, one paragraph per line
  'Hopefully when the goal is reached',
- 'First, moving my sketches from paper to screen, and giving the stories I’ve been writing a proper home. Then properly learning and refining my design and development skills, so I can keep building tools like Sketch Studio, etc.',
+ 'First, moving my sketches from paper to screen, and giving the stories I’ve been writing a proper home. Then properly learning and refining my design and development skills, so I can keep building tools like Lineworks, etc.',
  'After that, taking on real work and more motion from there.'];
 const SHOW=[{src:A.ufot,cap:'Illustration by Ufot Ubon',credit:'Illustration by Ufot Ubon · @ufotubon on X',cover:1},{src:A.cap,cap:'Cap & glasses',cover:1}];
 const DONATIONS=[500,1000,2000,5000];
@@ -1304,7 +1304,7 @@ async function showReady(){fileBlob=null;ART=null;bgPick=bgList()[0].id;const w=
 async function save(blob,name){
  if(dl){try{await dl.save({filename:name,data:blob});return 'saved'}catch(e){return e&&e.code==='declined'?'declined':'error'}}
  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000);return 'saved'}
-/* Trace line art into smooth vector outlines (SVG), the same way Sketch Studio does, for Figma. */
+/* Trace line art into smooth vector outlines (SVG), the same way Lineworks does, for Figma. */
 function trace(c){
  const W=c.width,H=c.height,d=c.getContext('2d').getImageData(0,0,W,H).data,V=W+1,E=new Map(),
  on=(x,y)=>x>=0&&y>=0&&x<W&&y<H&&d[(y*W+x)*4+3]>90,add=(a,b)=>{const l=E.get(a);l?l.push(b):E.set(a,[b])};
