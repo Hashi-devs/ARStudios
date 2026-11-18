@@ -432,7 +432,7 @@ textarea.inp{min-height:110px;resize:vertical}
   <div class="q" style="margin:10px 0 0"><label class="sr" for="donMsg">Message</label><textarea class="inp" id="donMsg" maxlength="600" placeholder="A message (optional)"></textarea></div>
   <label class="wallq"><input type="checkbox" id="donWall" checked><span>Show my name and message on the Thank-yous wall<small>Only if you add a name. Your email is never shown.</small></span></label>
   <p class="err" id="donErr" role="alert"></p></div>
- <p class="notice" id="donNote">Demo mode: payments aren't connected here.</p>
+ <p class="notice" id="donNote">Demo mode. Payments aren't connected here.</p>
  <button class="pill full" id="donateGo" type="button" disabled>Donate</button>
 </div></div>
 
@@ -446,7 +446,7 @@ textarea.inp{min-height:110px;resize:vertical}
   <p class="ddesc" id="dDesc" hidden></p>
   <div id="dTalk" hidden>
    <a class="pill glass tryit" id="dLink" target="_blank" rel="noopener">Try it <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-   <p class="talkNote">This one is by arrangement. Buying it, licensing it or a custom version: send me a note and we’ll work it out together.</p>
+   <p class="talkNote">This one is by arrangement. Whether you want to buy it, license it or get a custom version, send me a note and we’ll work it out together.</p>
   </div>
   <div id="dBuy">
   <div class="drow"><span>Price</span><b id="dPrice"></b></div>
@@ -461,7 +461,7 @@ textarea.inp{min-height:110px;resize:vertical}
   <p class="talkNote" style="margin:0 0 18px">Tell me what you have in mind. I’ll reply by email.</p>
   <div class="q"><label for="eName">Your name</label><input class="inp" id="eName" autocomplete="name" maxlength="60" placeholder="Your name or studio"><p class="err" id="eNameErr" role="alert"></p></div>
   <div class="q"><label for="eEmail">Your email</label><span class="sub">Where I’ll reply. Never shown to anyone.</span><input class="inp" id="eEmail" type="email" autocomplete="email" placeholder="you@example.com"><p class="err" id="eEmailErr" role="alert"></p></div>
-  <div class="q"><label for="eMsg">Your message</label><span class="sub">What you’d like: to buy it, license it, a custom version, or just to say hello.</span><textarea class="inp" id="eMsg" maxlength="1500" placeholder="Hi Àmúró, I’m interested in…"></textarea><p class="err" id="eMsgErr" role="alert"></p></div>
+  <div class="q"><label for="eMsg">Your message</label><span class="sub">Tell me what you’d like, whether that’s buying it, licensing it, a custom version or just saying hello.</span><textarea class="inp" id="eMsg" maxlength="1500" placeholder="Hi Àmúró, I’m interested in…"></textarea><p class="err" id="eMsgErr" role="alert"></p></div>
   <div class="q"><label for="eBudget">Budget (optional)</label><input class="inp" id="eBudget" maxlength="80" placeholder="e.g. ₦150,000 or $200"></div>
   <p class="err" id="eErr" role="alert"></p>
  </form>
@@ -479,7 +479,7 @@ textarea.inp{min-height:110px;resize:vertical}
     <label class="opt"><input type="radio" name="pm" value="ussd"><i class="oi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="7" cy="6" r="1.2"/><circle cx="12" cy="6" r="1.2"/><circle cx="17" cy="6" r="1.2"/><circle cx="7" cy="11" r="1.2"/><circle cx="12" cy="11" r="1.2"/><circle cx="17" cy="11" r="1.2"/><circle cx="7" cy="16" r="1.2"/><circle cx="12" cy="16" r="1.2"/><circle cx="17" cy="16" r="1.2"/><path d="M12 20.5v.01"/></svg></i><div><b>USSD</b><span>Dial a code, no internet needed</span></div></label>
    </div>
    <p class="abroad">Paying from outside Nigeria? Choose <b>Card</b>. You pay in naira and your bank converts it for you.</p>
-   <p class="notice" id="payNote">Demo mode: payments aren't connected here, so this takes you straight to the studio.</p></div>
+   <p class="notice" id="payNote">Demo mode. Payments aren't connected here, so this takes you straight to the studio.</p></div>
  </div>
  <div id="p3" hidden>
   <div class="rdy" id="ready"><canvas id="readyCv" aria-label="Your piece"></canvas><span class="wait" id="readyWait">Getting your file…</span></div>
@@ -504,7 +504,7 @@ textarea.inp{min-height:110px;resize:vertical}
   <section class="lapSl" aria-label="Option 2 of 2"><div class="lapPhoto"><img data-a="lap_5406" alt="Dell Inspiron 14 5406 2-in-1"></div><p class="opt1">Option 2</p><h3>Dell Inspiron 14 5406 2-in-1</h3><dl class="specs"><div class="main"><dt>Processor</dt><dd>Intel Core i5-1135G7, 11th Gen, up to 4.2 GHz</dd></div><div class="main"><dt>Memory</dt><dd>8 GB DDR4, two slots, upgradable</dd></div><div class="main"><dt>Storage</dt><dd>M.2 NVMe SSD</dd></div><div class="main"><dt>Design</dt><dd>2-in-1, folds back into a tablet</dd></div><div class=""><dt>Screen</dt><dd>14″ Full HD touchscreen</dd></div><div class=""><dt>Trackpad</dt><dd>Clean, no buttons</dd></div><div class=""><dt>Graphics</dt><dd>NVIDIA GeForce MX330 (on some) or Intel Iris Xe</dd></div><div class=""><dt>System</dt><dd>Windows 11</dd></div></dl></section>
  </div>
  <div class="lapnav"><button class="ibtn" id="lapPrev" type="button" aria-label="Previous laptop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button><span class="lapdots" id="lapDots"><i class="on"></i><i></i></span><button class="ibtn" id="lapNext" type="button" aria-label="Next laptop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button></div>
- <p class="lapnote">A note on the goal: it's set at ₦500,000 because tech prices keep changing, and to leave room for the things a new laptop needs, like a charger, a bag, a stylus and any repairs.</p>
+ <p class="lapnote">A note on the goal. It's set at ₦500,000 because tech prices keep changing, and to leave room for the things a new laptop needs, like a charger, a bag, a stylus and any repairs.</p>
 </div></div>
 
 <div class="ov" id="who" role="dialog" aria-modal="true" aria-labelledby="wName"><div class="sheet">
@@ -1288,7 +1288,7 @@ function onMockup(a,B,P){const bw=B.naturalWidth,bh=B.naturalHeight;
 // The drawing placed on the chosen background (drawings only; photos stay as they are)
 const styled=a=>{const b=bgNow();return b.type==='clear'?a:b.type==='mockup'?onMockup(a,bgImg(b),b.area):mockup(a,{layout:'flat',paper:bgImg(b),blend:'multiply'})};
 function dlLabel(){const clr=isArt(cur)&&bgNow().type==='clear',z=clr&&cur.kind==='drawing';if(step===3)$('#nextBtn').textContent=z?'Download PNG + SVG':clr?'Download PNG':'Download';
- $('#readyNote').textContent=cur&&cur.kind==='colour'?(clr?'A clear PNG, colours and all, ready to drop onto anything.':'Pick a background, or Clear for a see-through PNG.'):cur&&cur.kind==='drawing'?(z?'Line art comes as a ZIP: a clear PNG plus an SVG vector you can drop straight into Figma.':'Pick a background. Clear gives you the line art as PNG + SVG for Figma.'):'Full quality, exactly as I made it.';
+ $('#readyNote').textContent=cur&&cur.kind==='colour'?(clr?'A clear PNG, colours and all, ready to drop onto anything.':'Pick a background, or Clear for a see-through PNG.'):cur&&cur.kind==='drawing'?(z?'Line art comes as a ZIP with a clear PNG plus an SVG vector you can drop straight into Figma.':'Pick a background. Clear gives you the line art as PNG + SVG for Figma.'):'Full quality, exactly as I made it.';
  if(isArt(cur))$('#readyNote').textContent+=' A framed version comes free with it.'}
 function paint(){dlLabel();const cv=$('#readyCv'),v=isArt(cur)?styled(shrink(ART,900)):shrink(ART,900);cv.width=v.width;cv.height=v.height;cv.getContext('2d').drawImage(v,0,0);cv.classList.toggle('chk',isArt(cur)&&bgNow().type==='clear')}
 async function showReady(){fileBlob=null;ART=null;bgPick=bgList()[0].id;const w=$('#readyWait'),b=$('#nextBtn'),cv=$('#readyCv');
@@ -1364,7 +1364,7 @@ $('#p5').addEventListener('submit',e=>{e.preventDefault();$('#nextBtn').click()}
 async function sendInterest(){const nm=$('#eName').value.trim(),em=$('#eEmail').value.trim(),msg=$('#eMsg').value.trim();
  $('#eNameErr').textContent=nm?'':'Enter your name.';$('#eEmailErr').textContent=isEmail(em)?'':'Enter an email like name@example.com.';$('#eMsgErr').textContent=msg.length>=5?'':'Tell me a little about what you have in mind.';
  if(!nm)return $('#eName').focus();if(!isEmail(em))return $('#eEmail').focus();if(msg.length<5)return $('#eMsg').focus();
- if(!LIVE)return showDone('Message sent','Demo mode: on the live site this goes straight to my inbox, and I reply to '+em+'.',true);
+ if(!LIVE)return showDone('Message sent','Demo mode. On the live site this goes straight to my inbox, and I reply to '+em+'.',true);
  const b=$('#nextBtn');b.disabled=true;b.textContent='Sending…';
  try{await api('/enquire',{method:'POST',body:JSON.stringify({pieceId:cur.id,name:nm,email:em,message:msg,budget:$('#eBudget').value.trim()})});
   ['eMsg','eBudget'].forEach(id=>$('#'+id).value='');showDone('Message sent','Thanks, '+nm.split(' ')[0]+'. Your note about '+cur.name+' is in my inbox, and I’ll reply to '+em+' soon.',true)}
