@@ -58,6 +58,11 @@ button{font-family:inherit}
 .top.sc:not(.onhero){background:var(--glass);-webkit-backdrop-filter:blur(18px) saturate(1.7);backdrop-filter:blur(18px) saturate(1.7);box-shadow:inset 0 -1px 0 var(--line)}
 .top .wrap{display:grid;grid-template-columns:44px 1fr 44px;align-items:center;height:64px}
 .logo{justify-self:center;display:flex;color:var(--ink);text-decoration:none}
+.dnav{display:none}
+@media (min-width:900px){.top .wrap{grid-template-columns:auto 1fr}#menuBtn{display:none}.logo{justify-self:start}.wm{align-items:flex-start}
+.dnav{display:flex;align-items:center;justify-self:end;gap:30px}
+.dnav a,.dnav span{display:inline-flex;align-items:center;gap:6px;font-size:15px;font-weight:500;color:inherit;text-decoration:none;opacity:.82;transition:opacity .2s}
+.dnav a:hover{opacity:1}.dnav span{opacity:.42;cursor:not-allowed}.dnav svg{width:13px;height:13px}}
 .wm{display:inline-flex;flex-direction:column;align-items:center;color:var(--ink);white-space:nowrap;line-height:1}
 .wm b{font:400 34px/.82 "Chaumont Script","Brush Script MT",cursive;letter-spacing:-.01em;padding-top:6px}
 .wm i{font:600 8.5px/1 "Google Sans Flex",system-ui,sans-serif;font-style:normal;text-transform:uppercase;letter-spacing:.34em;margin:1px 0 0 .34em}
@@ -325,7 +330,7 @@ textarea.inp{min-height:110px;resize:vertical}
 <header class="top" id="top"><div class="wrap">
  <button class="ibtn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
  <a class="logo" href="#home" aria-label="AR Studios, home"><span class="wm" aria-hidden="true"><b>AR</b><i>Studios</i></span></a>
- <span aria-hidden="true"></span>
+ <nav class="dnav" aria-label="Main"><span aria-disabled="true" title="Coming soon">About <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><a href="#gallery">Gallery</a><a href="#progress">Progress</a><a href="#thanks">Thank-yous</a><span aria-disabled="true" title="Coming soon">Credits <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span></nav>
 </div></header>
 
 <main id="home">
